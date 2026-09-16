@@ -9,7 +9,14 @@ sidebar_position: 1
 
 This is the **employee documentation**. Start here if you are already using the assistant, want to know what a feature does, or have run into a problem.
 
-## Common destinations
+## Everyday use
+
+- **[Sessions and assistants](/sessions)** — where conversations are kept, and when to start a new one
+- **[Memory](/memory)** — how it remembers things, and where
+- **[Models](/models)** — which are available, and which parts are your call
+- **[Identity and profile](/identity)** — how you sign in, and what this page does and does not control
+
+## Something wrong, or missing
 
 - **[Won't open, or looks wrong](/troubleshooting)** — blank screen, bounced back to sign-in, buttons that do nothing
 - **[Configured by your administrator](/admin-managed)** — the settings you can see but cannot change
