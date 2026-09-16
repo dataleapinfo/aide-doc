@@ -3,9 +3,23 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // 站点挂在 docs.dataleapinfo.com 的 /aide 段下。主机名刻意不带产品名 —— 路径能用 301
 // 改名,主机名一旦进了发到客户站点的产物就改不回来了(ops-workspace#145)。
+// `title` and `tagline` are the one pair of strings Docusaurus does NOT read from
+// i18n/<locale>/*.json — they are resolved once, at config load. Without this the
+// English pages would render "Overview | DataLeap 企业个人助手" in the browser tab.
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE ?? "zh-CN";
+const branding = {
+  "zh-CN": {
+    title: "DataLeap 企业个人助手",
+    tagline: "帮助员工把工作做完的企业级智能助手",
+  },
+  en: {
+    title: "DataLeap Enterprise Personal Assistant",
+    tagline: "An enterprise assistant that helps employees get the work done",
+  },
+} as const;
+
 const config: Config = {
-  title: "DataLeap 企业个人助手",
-  tagline: "帮助员工把工作做完的企业级智能助手",
+  ...(branding[locale as keyof typeof branding] ?? branding["zh-CN"]),
 
   url: "https://docs.dataleapinfo.com",
   baseUrl: "/aide/",
@@ -13,8 +27,8 @@ const config: Config = {
   organizationName: "dataleapinfo",
   projectName: "aide-doc",
 
-  // 死链必须让构建失败:本站的存在理由就是接住产品里 73 个外链,
-  // 放任死链等于把问题从上游搬到自己家。
+  // 死链必须让构建失败:本站的存在理由就是接住产品界面里那 64 条外链
+  // (leap-aide#1177),放任死链等于把问题从上游搬到自己家。
   onBrokenLinks: "throw",
   onBrokenAnchors: "throw",
   markdown: {
