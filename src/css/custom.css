@@ -1,0 +1,21 @@
+/* DataLeap 品牌色。取值与产品界面保持一致,读者从产品里点进来不会觉得换了个站。 */
+:root {
+  --ifm-color-primary: #1d6f5c;
+  --ifm-color-primary-dark: #1a6453;
+  --ifm-color-primary-darker: #185e4e;
+  --ifm-color-primary-darkest: #144d40;
+  --ifm-color-primary-light: #207a65;
+  --ifm-color-primary-lighter: #22806a;
+  --ifm-color-primary-lightest: #269177;
+  --ifm-code-font-size: 95%;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #4fbf9f;
+  --ifm-color-primary-dark: #3cb694;
+  --ifm-color-primary-darker: #38ad8c;
+  --ifm-color-primary-darkest: #2e8f74;
+  --ifm-color-primary-light: #62c8aa;
+  --ifm-color-primary-lighter: #6ccbaf;
+  --ifm-color-primary-lightest: #8bd6c0;
+}

@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.main.category.遇到问题": {
+    "message": "When something goes wrong",
+    "description": "The label for category '遇到问题' in sidebar 'main'"
+  },
+  "sidebar.main.category.能力范围": {
+    "message": "What's available",
+    "description": "The label for category '能力范围' in sidebar 'main'"
+  }
+}

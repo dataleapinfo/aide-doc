@@ -1,0 +1,3 @@
+# core-js 的 postinstall 只打印赞助信息,没有构建产物 —— 明确拒绝,免得安装报错。
+allowBuilds:
+  core-js: false

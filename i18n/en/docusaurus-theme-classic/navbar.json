@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "DataLeap Enterprise Personal Assistant",
+    "description": "The title in the navbar"
+  },
+  "item.label.文档": {
+    "message": "Docs",
+    "description": "Navbar item with label 文档"
+  }
+}
