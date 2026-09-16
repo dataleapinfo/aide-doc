@@ -3,6 +3,10 @@
     "message": "Next",
     "description": "The label for version current"
   },
+  "sidebar.main.category.日常使用": {
+    "message": "Everyday use",
+    "description": "The label for category '日常使用' in sidebar 'main'"
+  },
   "sidebar.main.category.遇到问题": {
     "message": "When something goes wrong",
     "description": "The label for category '遇到问题' in sidebar 'main'"

@@ -5,6 +5,12 @@ const sidebars: SidebarsConfig = {
     "index",
     {
       type: "category",
+      label: "日常使用",
+      collapsed: false,
+      items: ["sessions", "memory", "models", "identity"],
+    },
+    {
+      type: "category",
       label: "遇到问题",
       collapsed: false,
       items: ["troubleshooting", "admin-managed"],
